@@ -118,7 +118,7 @@ section{
     line-height: 1.8;
 }
 .home-img img{
-    width: 27vw;
+    width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color--);
     transition: 0.4s ease-in-out;
@@ -246,9 +246,9 @@ section{
 }
 .project-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
-    gap: 3rem;
+    gap: 5rem;
     row-gap: 5rem;
 }
 .project-card{
@@ -273,7 +273,7 @@ section{
     transform: scale(1.02);
 }
 .project-card img{
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 2rem;
     object-fit: cover;
 }
@@ -313,4 +313,89 @@ section{
 }
 .skill-card h3{
     font-size: 2rem;
+}
+.contact{
+    background-color: var(--second-bg-color--);
+}
+.contact h2{
+    margin-bottom: 2rem;
+    color: var(--text-color--);
+}
+.contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem;
+    text-align: center;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2rem; 
+    font-size: 1.5rem;
+    background-color: var(--bg-color--);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color--);
+    color: var(--text-color--);
+    margin: 1rem 0;
+    resize: none;
+}
+.footer{
+    padding: 5rem 5%;
+}
+.footer-content{
+    background-color: var(--bg-color--);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content p{
+    font-size: 1.5rem;
+}
+
+@media(max-width:1285px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-left: 2px solid var(--main-color--);
+        border-bottom: 2px solid var(--main-color-- );
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: var(--text-color--);
+    }
+    .navbar.active{
+        display: block;
+    }
+    .gradient-btn{
+        display: none;
+    }
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-img img{
+        width: 50vw;
+    }
+    .contact form{
+        flex-direction: column;
+    }
+
+
 }

@@ -92,7 +92,8 @@ section{
 .home{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
     
 }
 .home-content{
@@ -173,4 +174,64 @@ section{
     box-shadow: 0 0 25px var(--main-color--);
     background-color: var(--main-color--);
     color: black;
+}
+.education-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 12% 2rem;
+}
+.timeline-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.heading{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.heading i{
+    font-size: 4rem;
+}
+.content-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    border: 3px solid var(--main-color--);
+    border-radius: 1rem;
+    font-size: 12px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.content-box:hover{
+    box-shadow: 0 0 25px var(--main-color--);
+}
+.timeline-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-left: 4px solid var(--main-color--);
+}
+.content-box h3{
+    font-size: 1.3rem;
+}
+.date{
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: var(--main-color--);
+}
+.content-box::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: var(--main-color--);
+    border-radius: 50%;
+    left: -35px;
+    top: 70px;
 }

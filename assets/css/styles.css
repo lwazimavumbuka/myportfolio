@@ -355,7 +355,7 @@ section{
     font-size: 1.5rem;
 }
 
-@media(max-width:1285px){
+@media(max-width:1280px){
     *{
         text-decoration: none;
     }

@@ -132,9 +132,20 @@ header {
     border: 1px solid var(--card-border);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .05);
 }
-
+.column .desc{
+    font-size: small;
+}
 .card:hover {
     transform: scale(1.05);
+}
+
+.card .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+.icons .stack-icon i{
+    font-size: 1.6rem;
 }
 
 @media (max-width: 750px) {

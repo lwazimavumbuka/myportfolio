@@ -115,64 +115,15 @@ header {
     gap: 3rem;
 }
 
-<<<<<<< HEAD
 .column h3 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
 }
-=======
-@media(max-width:1280px){
-    *{
-        text-decoration: none;
-    }
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0%;
-        width: 50%;
-        padding: 1rem 3rem;
-        background: rgba(0, 0, 0, 0.8);
-        border-left: 2px solid var(--main-color--);
-        border-bottom: 2px solid var(--main-color-- );
-        display: none;
-    }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 2rem 0;
-        color: var(--text-color--);
-    }
-    .navbar.active{
-        display: block;
-    }
-    .gradient-btn{
-        display: none;
-    }
-    .home {
-        flex-direction: column-reverse;
-        margin: 5rem 0;
-        gap: 5rem;
-    }
-    .home-content{
-        align-items: center;
-        text-align: center;
-    }
-    .home-img img{
-        width: 50vw;
-    }
-    .contact form{
-        flex-direction: column;
-    }
->>>>>>> 3c90323c7620bd1568e87bbe804ee75bc0fe658e
 
 .column a {
     color: var(--accent-color);
 }
 
-<<<<<<< HEAD
 .card {
     background: var(--card-bg);
     padding: 1rem;
@@ -194,6 +145,3 @@ header {
         width: 90%;
     }
 }
-=======
-}
->>>>>>> 3c90323c7620bd1568e87bbe804ee75bc0fe658e
